@@ -283,7 +283,7 @@ header .container nav .navigation > li > a {
 @media (max-width: 767.98px) {
   header .container nav .navigation > li > a {
     height: 40px;
-    font-size: 14px;
+    font-size: 16px;
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -494,6 +494,12 @@ header .container .dropdown .mega-dropdown ul li a i {
   transform: translateX(-50%);
   color: var(--main-color);
   animation: up-down 1.5s infinite;
+}
+
+@media (max-width: 767.98px) {
+  .jump-down {
+    bottom: 80px;
+  }
 }
 /* end landing */
 
