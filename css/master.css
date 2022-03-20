@@ -1808,13 +1808,15 @@ header .container .dropdown .mega-dropdown ul li a i {
   }
 }
 
-#discount section {
+#discount > section,
+#discount .request {
   flex: 1;
   padding: 50px;
 }
 
 @media (max-width: 575.98px) {
-  #discount section {
+  #discount > section,
+  #discount .request {
     padding: 50px 15px;
   }
 }
@@ -1825,13 +1827,13 @@ header .container .dropdown .mega-dropdown ul li a i {
   text-transform: capitalize;
 }
 
-@media (max-width: 299.98px) {
+@media (max-width: 349.98px) {
   #discount section h3 {
     font-size: 20px;
   }
 }
 
-#discount section:first-of-type {
+#discount > section {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1845,7 +1847,7 @@ header .container .dropdown .mega-dropdown ul li a i {
   z-index: 1;
 }
 
-#discount section:first-of-type::before {
+#discount > section::before {
   content: "";
   position: absolute;
   left: 0;
@@ -1856,48 +1858,54 @@ header .container .dropdown .mega-dropdown ul li a i {
   z-index: -1;
 }
 
-#discount section:first-of-type h3,
-#discount section:first-of-type p {
+#discount > section h3,
+#discount > section p {
   color: #fff;
 }
 
-#discount section:first-of-type p {
+#discount > section p {
   font-size: 18px;
   line-height: 1.6;
   text-align: center;
 }
 
 @media (max-width: 575.98px) {
-  #discount section:first-of-type p {
+  #discount > section p {
     font-size: 16px;
   }
 }
 
-#discount section:first-of-type img {
+#discount > section img {
   max-width: 250px;
 }
 
 @media (max-width: 299.98px) {
-  #discount section:first-of-type img {
+  #discount > section img {
     width: 100%;
   }
 }
 
-#discount section:last-of-type h3,
-#discount section:last-of-type form {
+#discount .request {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#discount .request h3,
+#discount .request form {
   margin-left: auto;
   margin-right: auto;
 }
 
-#discount section:last-of-type h3 {
+#discount .request h3 {
   max-width: 300px;
 }
 
-#discount section:last-of-type {
+#discount .request {
   border-top: 1px solid var(--main-color);
 }
 
-#discount section:last-of-type form {
+#discount .request form {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -1905,34 +1913,34 @@ header .container .dropdown .mega-dropdown ul li a i {
   margin-top: 30px;
 }
 
-@media (max-width: 299.98px) {
-  #discount section:last-of-type form {
+@media (max-width: 349.98px) {
+  #discount .request form {
     width: 100%;
   }
 }
 
-#discount section:last-of-type form input,
-#discount section:last-of-type form textarea,
-#discount section:last-of-type form button {
+#discount .request form input,
+#discount .request form textarea,
+#discount .request form button {
   width: 100%;
   padding: 15px;
   border: none;
 }
 
-#discount section:last-of-type form input,
-#discount section:last-of-type form textarea {
+#discount .request form input,
+#discount .request form textarea {
   background-color: #f6f6f6;
   border-bottom: 1px solid var(--main-border-color);
 }
 
-#discount section:last-of-type form input,
-#discount section:last-of-type form input::placeholder,
-#discount section:last-of-type form textarea {
+#discount .request form input,
+#discount .request form input::placeholder,
+#discount .request form textarea {
   color: #777;
   text-transform: capitalize;
 }
 
-#discount section:last-of-type form button {
+#discount .request form button {
   background-color: var(--main-color);
   color: #fff;
   font-weight: bold;
