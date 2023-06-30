@@ -409,12 +409,14 @@ header .container .dropdown .mega-dropdown ul li a i {
 .landing::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -40px;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: #ececec;
-  clip-path: polygon(0 0, 100% 0%, 100% 60%, 0 80%);
+/*   clip-path: polygon(0 0, 100% 0%, 100% 60%, 0 80%); */
+  transform: skewY(-6deg);
+  transform-origin: top left;
   z-index: -1;
 }
 
@@ -1471,6 +1473,13 @@ header .container .dropdown .mega-dropdown ul li a i {
     rgba(0, 0, 0, 0.12) 0px 2px 4px 0px;
   z-index: 3;
   overflow: hidden;
+}
+
+/* Large Devices (1200px and Up) */
+@media (min-width: 1200px) {
+  #pricing-plan .container .plan:nth-of-type(2) {
+    top: -40px;
+  }
 }
 
 #pricing-plan .container .plan::before,
